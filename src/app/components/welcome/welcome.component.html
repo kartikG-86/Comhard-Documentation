@@ -1,1 +1,21 @@
-<p>welcome works!</p>
+<div class="p-4">
+    <h2 style="font-weight: bold;">Welcome</h2>
+    <h6 class="my-4" style="line-height: 2rem;">Welcome to CoCloud Documentation.
+        <br /> As a member of our backend team, it's
+        essential that you first gain a solid understanding of our company. This foundational knowledge will give you
+        valuable insights into our codebase and its structure, helping you to contribute more effectively.
+        <br />
+        <br />
+        This documentation is your comprehensive guide to navigating our backend systems. It covers everything you need
+        to get started, from setting up your development environment to understanding our code structure and adhering to
+        our best practices.
+    </h6>
+    <div class="row mt-5">
+        @for(item of cards;track item.id){
+        <div class="col-5 mb-5 ms-5">
+            <app-cards [text]="item">
+            </app-cards>
+        </div>
+        }
+    </div>
+</div>

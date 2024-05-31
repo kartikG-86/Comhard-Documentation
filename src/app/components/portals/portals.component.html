@@ -1,0 +1,16 @@
+<div class="p-4">
+    <h2 style="font-weight: bold;">Comhard Portals</h2>
+    <h6 class="my-4" style="line-height: 2rem;">
+        This section provides an in-depth exploration of our backend code for three distinct portals. Delve into the
+        details and gain a comprehensive understanding of each portal's backend infrastructure. Begin your journey now.
+    </h6>
+
+    <div class="row mt-5">
+        @for(item of cards;track item.id){
+        <div class="col-5 mb-4 ms-5">
+            <app-cards [text]="item">
+            </app-cards>
+        </div>
+        }
+    </div>
+</div>

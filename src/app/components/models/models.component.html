@@ -1,1 +1,32 @@
-<p>models works!</p>
+<div style="height: 100vh;overflow: hidden;">
+    <app-navbar></app-navbar>
+    <div class=" row" style="overflow: scroll;">
+        <div class="col-2" style="border: 1px solid rgba(218, 213, 213, 0.651); height: 91.5vh;overflow-y: scroll;">
+            <app-sidebar [sidebar_list]="sidebar_list"></app-sidebar>
+        </div>
+
+
+        <div *ngIf="currentRoute == null " class="col-10 p-4 text-center">
+            <h2 class=" my-3">Explore Our Data Universe: Unraveling the Schema Mysteries</h2>
+
+            <h6 style="color: grey;line-height: 2rem;">Welcome to the Models tab, your gateway to understanding the
+                intricate schema of
+                our system. <br /> Here, you'll delve into the very blueprint of our data structures, gaining insights
+                into how
+                information is organized, relationships are defined, and operations are executed. Get ready to navigate
+                through a world of entities, attributes, and associations, unlocking the secrets of our data
+                architecture along the way. Let's embark on a journey of discovery together!
+            </h6>
+
+            <img src="images/database.png" style="height: 20rem; width: 20rem;" />
+
+        </div>
+
+        <div *ngIf="currentRoute" class="col-10"
+            style="background-color: #fafafa;overflow-y: scroll;max-height: 89vh;border:1px solid rgba(218, 213, 213, 0.651)">
+            <app-models-code-structure></app-models-code-structure>
+        </div>
+
+    </div>
+
+</div>

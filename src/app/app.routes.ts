@@ -5,6 +5,7 @@ import { ModelsComponent } from './components/models/models.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'welcome', component: HomeComponent },
-  { path: 'models', component: HomeComponent },
+  { path: 'codehub/:section', component: HomeComponent },
+  { path: 'codehub/models/structure', component: ModelsComponent },
+  { path: 'codehub/models/structure/:type', component: ModelsComponent },
 ];

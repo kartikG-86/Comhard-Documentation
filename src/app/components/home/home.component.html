@@ -1,6 +1,20 @@
-<div style="height: 100vh; overflow: hidden">
+<div style="height: 100vh;overflow: hidden;">
   <app-navbar></app-navbar>
-  <div class="row">
-    <app-sidebar></app-sidebar>
+  <div class=" row" style="overflow: scroll;">
+    <div class="col-2" style="border: 1px solid rgba(218, 213, 213, 0.651); height: 91.5vh;overflow-y: scroll;">
+      <app-sidebar [sidebar_list]="sidebar_list"></app-sidebar>
+    </div>
+
+    <div class="col-10"
+      style="background-color: #fafafa;overflow-y: scroll;max-height: 89vh;border:1px solid rgba(218, 213, 213, 0.651)">
+      @if(currentRoute == "welcome"){
+      <app-welcome></app-welcome>
+      }@else if(currentRoute == "portals") {
+      <app-portals></app-portals>
+      }
+
+    </div>
+
   </div>
+
 </div>

@@ -1,0 +1,24 @@
+.code-example {
+  background-color: #444444;
+  color: white;
+}
+
+.li_key{
+  font-size: 1.4rem;
+  font-weight: 600;
+  
+}
+
+ul , li{
+  list-style: none;
+}
+
+.sub-li{
+  font-weight:bold
+}
+
+.sub-li>span{
+  font-weight: 400; 
+  color:grey
+}
+

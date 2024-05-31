@@ -1,13 +1,13 @@
-h2 {
-  font-size: 1.5rem;
+h5 {
   cursor: pointer;
-  list-style: none;
-}
-
-ul {
-  list-style: none;
+  width:15.4rem
 }
 
 .active {
   background-color: rgba(150, 147, 147, 0.473);
+}
+
+a{
+  color:black;
+  text-decoration: none;
 }

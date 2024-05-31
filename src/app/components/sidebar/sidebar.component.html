@@ -1,16 +1,7 @@
-<div
-  class="col-2"
-  style="border: 1px solid rgba(218, 213, 213, 0.651); height: 91.5vh"
->
-  @for(item of sidebar_list;track item.id){
-  <h2
-    [id]="item.id"
-    [ngClass]="activeId == item.id ? 'active' : ''"
-    class="py-4 my-0 text-center"
-    (click)="addActiveClass(item)"
-  >
-    {{ item.name }}
-  </h2>
+@for(item of sidebar_list;track item.id){
+<h5 [id]="item.id" [ngClass]="activeId == item.id ? 'active' : ''" class="py-4 my-0 text-center"
+  [routerLink]="[item.link]">
+  {{ item.name }}
+</h5>
 
-  }
-</div>
+}
