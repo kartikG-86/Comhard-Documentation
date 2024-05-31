@@ -147,6 +147,7 @@ code:any
 modelDetails:any
 constructor(public router: Router, public route: ActivatedRoute,public get_models:ModelDetailsService) {
   this.route.paramMap.subscribe((res) => {
+    
     this.currentRoute = (res.get('type') as any).toLowerCase()
   })
 }

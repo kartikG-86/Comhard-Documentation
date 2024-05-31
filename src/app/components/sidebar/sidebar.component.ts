@@ -9,7 +9,7 @@ import { ActivatedRoute, Route, Router, RouterLink } from '@angular/router';
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
-export class SidebarComponent  {
+export class SidebarComponent implements OnInit  {
  @Input() sidebar_list:any
   activeId = 0;
   nextRoute: any;
@@ -23,6 +23,14 @@ export class SidebarComponent  {
       }
     })
   }
+
+  ngOnInit(): void {
+    if(this.currentRoute != null && this.sidebar_list != undefined){
+      let index = this.sidebar_list.findIndex((item:any) => item.name.split(' ').join('').toLowerCase() == this.currentRoute.toLowerCase())
+      this.activeId = (this.sidebar_list[index] as any).id
+    }
+  }
+  
 
 
 

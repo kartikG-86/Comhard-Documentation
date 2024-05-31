@@ -11,12 +11,15 @@ import { PartnerPortalComponent } from './components/partner-portal/partner-port
 import { ModelsCodeStructureComponent } from './components/models-code-structure/models-code-structure.component';
 import {  HttpClient } from '@angular/common/http';
 import { ModelDetailsService } from './model-details.service';
+import { LoginComponent } from './components/login/login.component';
+import { LoginService } from './services/Login/login.service';
+import { HandleTokenService } from './services/Handle_Token/handle-token.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, WelcomeComponent, ModelsComponent,PortalsComponent,ModelsComponent,CustomerPortalComponent,AdminPortalComponent,PartnerPortalComponent,ModelsCodeStructureComponent],
-  providers:[ModelDetailsService],
+  imports: [RouterOutlet, HomeComponent, WelcomeComponent, ModelsComponent,PortalsComponent,ModelsComponent,CustomerPortalComponent,AdminPortalComponent,PartnerPortalComponent,ModelsCodeStructureComponent,LoginComponent],
+  providers:[ModelDetailsService,LoginService,HandleTokenService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
