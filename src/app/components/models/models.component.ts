@@ -107,8 +107,8 @@ export class ModelsComponent {
       id: 21,
     },
     {
-      name: 'Suscription',
-      link: '/codehub/models/structure/suscription',
+      name: 'Subscription',
+      link: '/codehub/models/structure/subscription',
       id: 22,
     },
     {
@@ -121,21 +121,13 @@ export class ModelsComponent {
       link: '/codehub/models/structure/tallyVersion',
       id: 24,
     },
-    {
-      name: 'Temp Roles',
-      link: '/codehub/models/structure/tempRoles',
-      id: 25,
-    },
+
     {
       name: 'Ticket',
       link: '/codehub/models/structure/ticket',
       id: 26,
     },
-    {
-      name: 'Time Range',
-      link: '/codehub/models/structure/timeRange',
-      id: 27,
-    },
+
     {
       name: 'Virtual Machine Log',
       link: '/codehub/models/structure/virtualMachineLog',
